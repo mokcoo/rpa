@@ -4,7 +4,7 @@ pipeline{
     stages {
         stage('pull code'){
             steps{
-               git credentialsId: 'github user password', url: 'https://github.com/mokcoo/pipelinetest.git'
+               git credentialsId: 'github user password', url: 'https://github.com/mokcoo/rpa.git'
             }
         }
         stage("build project"){
